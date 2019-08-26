@@ -1,15 +1,9 @@
 import { Action, DEFAULT } from "./actions";
-import {combineReducers} from 'redux'
+import {State, initialState} from './state';
 
-interface State {
-    foo: string
-}
+//reducers.ts <-> Update.elm
 
-const initialState = {
-    foo: "bar"
-}
-
-export const rootReducer = (state: State= initialState, action: Action ): State => {
+export const rootReducer = (state: State = initialState, action: Action ): State => {
     switch(action.type){
         case DEFAULT: {
             return {

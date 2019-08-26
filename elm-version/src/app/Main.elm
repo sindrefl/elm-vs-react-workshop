@@ -1,8 +1,9 @@
 module Main exposing (..)
 
 import Browser
-import Html exposing (Html, text, div, h1, img)
-import Html.Attributes exposing (src)
+import Html exposing (Html, text, div, h1, img, p, button)
+import Html.Attributes exposing (src, width)
+import Html.Events exposing (onClick)
 import Model exposing (..)
 import Message exposing (..)
 import Update exposing (..)
@@ -22,8 +23,9 @@ main =
 view : Model -> Html Msg
 view model =
     div []
-        [ img [ src "/logo.svg" ] []
-        , h1 [] [ text "Your Elm App is working!" ]
+        [ img [ src "/logo.svg", width 400 ] []
+        , p [] [text model.foo]
+        , button [onClick (Something "baz")] [text "Hello from ELM, Click me!"]
         ]
 
 

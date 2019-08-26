@@ -1,3 +1,4 @@
+// actions.ts <-> Message.elm
 
 export const DEFAULT = "DEFAULT"
 

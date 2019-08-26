@@ -4,9 +4,11 @@ import Message exposing (..)
 
 
 type alias Model =
-    {}
+    {
+        foo: String
+    }
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( {}, Cmd.none )
+    ( {foo = "bar"}, Cmd.none )
