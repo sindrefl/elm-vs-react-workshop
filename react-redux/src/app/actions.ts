@@ -1,9 +1,9 @@
 // actions.ts <-> Message.elm
 
-export const DEFAULT = "DEFAULT"
+export const Something = "Something"
 
 interface DefaultAction {
-    type: typeof DEFAULT,
+    type: typeof Something,
     payload: string
 }
 

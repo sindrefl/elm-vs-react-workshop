@@ -1,7 +1,7 @@
 import React, { Dispatch } from 'react';
 import './Main.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { Action, DEFAULT } from './actions';
+import { Action, Something } from './actions';
 import {createSelector} from 'reselect';
 import { getState } from './reducers';
 import logo from '../logo.svg'
@@ -20,7 +20,7 @@ export const Main: React.FC = () => {
     <div className="App">
     <img src={logo} width={400}/>
         <p>{value}</p>
-        <button onClick={() => dispatch({type: DEFAULT, payload: "baz"})}>Hello there from React-Redux, Click me!</button>
+        <button onClick={() => dispatch({type: Something, payload: "baz"})}>Hello there from React-Redux, Click me!</button>
     </div>
   );
 }
