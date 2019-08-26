@@ -25,7 +25,7 @@ view model =
     div []
         [ img [ src "/logo.svg", width 400 ] []
         , p [] [text model.foo]
-        , button [onClick (Something "baz")] [text "Hello from ELM, Click me!"]
+        , button [onClick (Something "baz")] [text "Hello there from ELM, Click me!"]
         ]
 
 
