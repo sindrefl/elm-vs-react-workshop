@@ -20,13 +20,4 @@ main =
         }
 
 
-view : Model -> Html Msg
-view model =
-    div []
-        [ img [ src "/logo.svg", width 400 ] []
-        , p [] [text model.foo]
-        , button [onClick (Something "baz")] [text "Hello there from ELM, Click me!"]
-        ]
-
-
 
